@@ -5,12 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/global.css">
 	<title>Document</title>
 </head>
 
-<body>
-	<div class="right">
+<body class="row">
+	<div class="col-12 col-sm-5 d-flex flex-column align-items-center justify-content-around">
 		<div class="top">
 			<h2>Player 1</h2>
 			<p id="point1" class="score-g">43</p>
@@ -20,14 +22,15 @@
 			<p id="pointC1" class="score-r">11</p>
 		</div>
 	</div>
-	<div class="middle">
+	<div class="middle col-2">
 		<button id="launch" class="start-game">NEW GAME</button>
 		<div class="btn-group">
+			<img src="assets/img/dice.svg" alt="">
 			<button id="roll">ROLL DICE</button>
 			<button id="hold">HOLD</button>
 		</div>
 	</div>
-	<div class="left">
+	<div class="col-12 col-sm-5 d-flex flex-column align-items-center justify-content-around">
 		<div class="top">
 			<h2>Player 2</h2>
 			<p id="point2" class="score-g">72</p>

@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +14,6 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e9e9e9aa), color-stop(50%, #fff));
   background: linear-gradient(90deg, #e9e9e9aa 50%, #fff 50%);
 }
 
@@ -25,14 +24,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .left {
@@ -51,14 +50,14 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 200;
 }
 
@@ -74,13 +73,13 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 1em 1.5em;
 }
 
@@ -109,16 +108,16 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 200px 1fr;
-      grid-template-columns: 1fr 200px 1fr;
+  grid-template-columns: 1fr 200px 1fr;
 }
 
 .middle {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "top" "bottom";
+  -ms-grid-rows: (1fr) [2];
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "top" "bottom";
 }
 
 .middle .start-game {
@@ -139,18 +138,23 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .middle .btn-group button {
   font-size: 2em;
   margin-bottom: 1em;
   font-weight: 300;
+}
+
+.dice {
+  position: absolute;
+  top: calc((100vh / 2) - 100px);
 }
