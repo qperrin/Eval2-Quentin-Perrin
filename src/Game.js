@@ -6,6 +6,8 @@ export class Game {
   }
 
   checkWinner() {
-    this.players.forEach((player) => {});
+    this.players.forEach((player) => {
+      console.log(player);
+    });
   }
 }
