@@ -49,10 +49,6 @@ h2 {
   color: $color-pink;
 }
 
-.win {
-  animation: blink-cstm 500ms infinite;
-}
-
 .round {
   background-color: $color-pink;
   display: flex;
@@ -112,16 +108,5 @@ body {
       margin-bottom: 1em;
       font-weight: 300;
     }
-  }
-}
-
-@keyframes blink-cstm {
-  from {
-    background-color: gold;
-    color: #fff;
-  }
-  to {
-    background-color: unset;
-    color: #eb4d4c;
   }
 }

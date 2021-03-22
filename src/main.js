@@ -48,10 +48,5 @@ holdBtn.addEventListener("click", () => {
     }
     game.turn = player == 1 ? 0 : 1;
     let winner = game.checkWinner(game.players[player]);
-    if (winner === 1) {
-      point1.classList.add("win");
-    } else if (winner === 2) {
-      point2.classList.add("win");
-    }
   }
 });
