@@ -50,7 +50,7 @@ h2 {
 }
 
 .win {
-  animation: blink 500ms infinite;
+  animation: blink-cstm 500ms infinite;
 }
 
 .round {
@@ -115,9 +115,9 @@ body {
   }
 }
 
-@keyframes blink {
+@keyframes blink-cstm {
   from {
-    background-color: black;
+    background-color: gold;
     color: #fff;
   }
   to {

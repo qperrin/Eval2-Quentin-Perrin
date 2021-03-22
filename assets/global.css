@@ -68,8 +68,8 @@ h2 {
 }
 
 .win {
-  -webkit-animation: blink 500ms infinite;
-          animation: blink 500ms infinite;
+  -webkit-animation: blink-cstm 500ms infinite;
+          animation: blink-cstm 500ms infinite;
 }
 
 .round {
@@ -160,9 +160,9 @@ body {
   font-weight: 300;
 }
 
-@-webkit-keyframes blink {
+@-webkit-keyframes blink-cstm {
   from {
-    background-color: black;
+    background-color: gold;
     color: #fff;
   }
   to {
@@ -171,9 +171,9 @@ body {
   }
 }
 
-@keyframes blink {
+@keyframes blink-cstm {
   from {
-    background-color: black;
+    background-color: gold;
     color: #fff;
   }
   to {
