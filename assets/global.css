@@ -67,6 +67,11 @@ h2 {
   color: #eb4d4c;
 }
 
+.win {
+  -webkit-animation: blink 500ms infinite;
+          animation: blink 500ms infinite;
+}
+
 .round {
   background-color: #eb4d4c;
   display: -webkit-box;
@@ -152,4 +157,26 @@ body {
   font-size: 2em;
   margin-bottom: 1em;
   font-weight: 300;
+}
+
+@-webkit-keyframes blink {
+  from {
+    background-color: black;
+    color: #fff;
+  }
+  to {
+    background-color: unset;
+    color: #eb4d4c;
+  }
+}
+
+@keyframes blink {
+  from {
+    background-color: black;
+    color: #fff;
+  }
+  to {
+    background-color: unset;
+    color: #eb4d4c;
+  }
 }
