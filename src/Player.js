@@ -1,5 +1,6 @@
 export class Player {
-  constructor() {
+  constructor(id) {
+    this.id = id;
     this.CurrentPoint = 0;
     this.Globalpoint = 0;
   }
@@ -8,12 +9,14 @@ export class Player {
     let point = Math.floor(Math.random() * 6) + 1;
     if (point === 1) {
       this.CurrentPoint = 0;
+      return true;
     } else {
       this.CurrentPoint += point;
     }
   }
 
-  HoldPoint() {
+  holdPoint() {
     this.Globalpoint += this.CurrentPoint;
+    this.CurrentPoint = 0;
   }
 }
