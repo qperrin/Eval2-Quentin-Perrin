@@ -7,7 +7,7 @@
 }
 
 html {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -70,4 +70,24 @@ button {
   outline: none;
   font-weight: 200;
   font-family: "Lato";
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+button:hover {
+  color: #eb4d4c;
+}
+
+i {
+  color: #eb4d4c;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 5em;
+  }
+  body {
+    background: none;
+  }
 }
