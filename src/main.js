@@ -48,5 +48,8 @@ holdBtn.addEventListener("click", () => {
     }
     game.turn = player == 1 ? 0 : 1;
     let winner = game.checkWinner(game.players[player]);
+    if (winner === 1 || winner === 2) {
+      game = null;
+    }
   }
 });
